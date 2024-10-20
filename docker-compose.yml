@@ -1,15 +1,11 @@
-# can't use mem_limit in a 3.x docker-compose file in non swarm mode
-# see https://github.com/docker/compose/issues/4513
-version: "2.4"
-
 services:
   whoogle-search:
     build: .
     container_name: whoogle-search
     restart: unless-stopped
-    pids_limit: 50
-    mem_limit: 256mb
-    memswap_limit: 256mb
+    #pids_limit: 50
+    #mem_limit: 256mb
+    #memswap_limit: 256mb
     # user debian-tor from tor package
     user: whoogle
     security_opt:
@@ -43,8 +39,8 @@ services:
       #- WHOOGLE_ALT_IMDB=farside.link/libremdb
       #- WHOOGLE_ALT_QUORA=farside.link/quetre
       #- WHOOGLE_ALT_SO=farside.link/anonymousoverflow
-    env_file: # Alternatively, load variables from whoogle.env
-      - whoogle.env
+#    env_file: # Alternatively, load variables from whoogle.env
+#      - whoogle.env
   cloudflared:
     container_name: cloudflared-search
     image: cloudflare/cloudflared
