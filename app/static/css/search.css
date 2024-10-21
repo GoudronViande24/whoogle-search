@@ -31,6 +31,8 @@ body {
 	top: 100%;
 	left: 0;
 	right: 0;
+
+	font-size: 16px;
 }
 
 .autocomplete-items div {
