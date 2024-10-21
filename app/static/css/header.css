@@ -1,8 +1,8 @@
 header {
-    font-family: Roboto,HelveticaNeue,Arial,sans-serif;
-    font-size: 14px;
-    line-height: 20px;
-    color: #3C4043;
+    /* font-family: Roboto,HelveticaNeue,Arial,sans-serif; */
+    font-size: 70px;
+    /* line-height: 20px; */
+    /* color: #3C4043; */
     word-wrap: break-word;
 }
 
@@ -20,19 +20,20 @@ header {
 }
 
 .mobile-logo {
-    font: 22px/36px Futura, Arial, sans-serif;
-    padding-left: 5px;
+    font-size: 25px;
+    /* padding-left: 5px; */
     display: flex;
     justify-content: center;
     align-items: center;
+		margin: 0 10px;
 }
 
 .logo-div {
     letter-spacing: -1px;
     text-align: center;
-    font: 22pt Futura, Arial, sans-serif;
+    /* font: 22pt Futura, Arial, sans-serif; */
     padding: 10px 0 5px 0;
-    height: 37px;
+    /* height: 37px; */
     font-smoothing: antialiased;
 }
 
@@ -81,9 +82,9 @@ header {
     box-shadow: 0 0 6px 1px #2375e8;
 }
 
-#mobile-header-logo {
+/* #mobile-header-logo {
     height: 1.75em;
-}
+} */
 
 .mobile-input-div {
     width: 100%;
@@ -109,9 +110,9 @@ header {
     width: 100%;
 }
 
-.desktop-header-logo {
+/* .desktop-header-logo {
     height: 1.65em;
-}
+} */
 
 .header-autocomplete {
     width: 100%;

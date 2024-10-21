@@ -11,6 +11,7 @@
     cursor: pointer;
     height: 40px;
     width: 50px;
+		font-size: 15px;
 }
 .ZINbbc.xpd.O9g5cc.uUPGi input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

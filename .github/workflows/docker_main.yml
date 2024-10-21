@@ -14,6 +14,8 @@ jobs:
     steps:
     - name: checkout code
       uses: actions/checkout@v2
+    - name: create test cloudflared.env file
+      run: touch cloudflared.env
     - name: build and test (docker)
       run: |
         docker build --tag whoogle-search:test .
